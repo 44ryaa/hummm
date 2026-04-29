@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For You, My Love 💕</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Ambient canvas background -->
+  <canvas id="ambient"></canvas>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursor-trail"></div>
+
+  <!-- Floating petals layer -->
+  <div class="petals-layer" id="petals-layer"></div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">a love letter, just for you</p>
+      <h1 class="hero-title">
+        You are my<br/>
+        <em>favourite</em> everything
+      </h1>
+      <div class="hero-heart" id="hero-heart">
+        <svg viewBox="0 0 100 90" xmlns="http://www.w3.org/2000/svg">
+          <path d="M50 85 C50 85 5 55 5 28 C5 14 16 5 28 5 C36 5 44 9 50 16 C56 9 64 5 72 5 C84 5 95 14 95 28 C95 55 50 85 50 85Z"/>
+        </svg>
+      </div>
+      <p class="hero-sub">scroll to discover why ↓</p>
+    </div>
+  </section>
+
+  <!-- Starry separator -->
+  <div class="separator">
+    <span class="sep-dot"></span><span class="sep-line"></span><span class="sep-dot"></span><span class="sep-line"></span><span class="sep-dot"></span>
+  </div>
+
+  <!-- Reasons Section -->
+  <section class="reasons" id="reasons">
+    <div class="reasons-header">
+      <h2 class="section-title">Reasons I love you</h2>
+      <p class="section-note">just a few of the infinite…</p>
+    </div>
+
+    <div class="reasons-grid" id="reasons-grid">
+
+      <div class="reason-card" data-index="1">
+        <div class="card-glow"></div>
+        <div class="card-number">01</div>
+        <div class="card-icon">✦</div>
+        <h3 class="card-title">Your smile</h3>
+        <p class="card-text">Every single time you smile, the entire world softens. It's the kind of smile that makes everything feel okay.</p>
+      </div>
+
+      <div class="reason-card" data-index="2">
+        <div class="card-glow"></div>
+        <div class="card-number">02</div>
+        <div class="card-icon">❋</div>
+        <h3 class="card-title">The way you care</h3>
+        <p class="card-text">Your warmth and kindness towards everyone around you reveals just how beautiful your heart truly is.</p>
+      </div>
+
+      <div class="reason-card" data-index="3">
+        <div class="card-glow"></div>
+        <div class="card-number">03</div>
+        <div class="card-icon">✿</div>
+        <h3 class="card-title">You make life fun</h3>
+        <p class="card-text">Even the most ordinary moments — a quiet walk, a late night — become magical adventures with you by my side.</p>
+      </div>
+
+      <div class="reason-card" data-index="4">
+        <div class="card-glow"></div>
+        <div class="card-number">04</div>
+        <div class="card-icon">✦</div>
+        <h3 class="card-title">Your strength</h3>
+        <p class="card-text">The grace and resilience you show every single day is breathtaking. You inspire me to be better without even trying.</p>
+      </div>
+
+      <div class="reason-card" data-index="5">
+        <div class="card-glow"></div>
+        <div class="card-number">05</div>
+        <div class="card-icon">❋</div>
+        <h3 class="card-title">You feel like home</h3>
+        <p class="card-text">No matter where we are, being with you feels like the safest, most peaceful place I've ever known.</p>
+      </div>
+
+      <div class="reason-card" data-index="6">
+        <div class="card-glow"></div>
+        <div class="card-number">06</div>
+        <div class="card-icon">✿</div>
+        <h3 class="card-title">The little things</h3>
+        <p class="card-text">The tiny gestures, the inside jokes, the way you just know — every little thing you do is everything to me.</p>
+      </div>
+
+      <div class="reason-card reason-card--wide" data-index="7">
+        <div class="card-glow"></div>
+        <div class="card-number">07</div>
+        <div class="card-icon">♡</div>
+        <h3 class="card-title">Simply because you are you</h3>
+        <p class="card-text">No reason needed. You are extraordinary just as you are, and I fall a little more in love with you every single day — without exception.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Quote Section -->
+  <section class="quote-section">
+    <div class="quote-inner" id="quote-inner">
+      <span class="quote-mark">"</span>
+      <blockquote>
+        In all the world, there is no heart for me like yours.<br/>
+        In all the world, there is no love for you like mine.
+      </blockquote>
+      <cite>— Maya Angelou</cite>
+    </div>
+  </section>
+
+  <!-- Closing Section -->
+  <section class="closing">
+    <div class="closing-hearts" id="closing-hearts"></div>
+    <div class="closing-inner">
+      <div class="closing-ring" id="closing-ring"></div>
+      <p class="closing-from">with every heartbeat,</p>
+      <p class="closing-sig">yours forever 💕</p>
+      <button class="love-btn" id="love-btn">send a kiss 💋</button>
+    </div>
+  </section>
+
+  <!-- Kiss burst overlay -->
+  <div class="kiss-burst" id="kiss-burst"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
